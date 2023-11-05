@@ -3,11 +3,11 @@ import random
 from shutil import copy2
 
 # Set your source directory containing images
-source_directory = "extracted_images"
+source_directory = "final_82"
 
 # Set your destination directories for train and test datasets
-train_directory = "train"
-test_directory = "test"
+train_directory = "train_images"
+test_directory = "test_images"
 
 # Create destination directories if they don't exist
 os.makedirs(train_directory, exist_ok=True)
