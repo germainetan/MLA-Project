@@ -37,3 +37,25 @@ Contains all the individual digits & symbols images used to train CNN model. How
 
 ### train_test_split.py
 Splits all the individual digits & symbols images into 90% train and 10% test to be stored in final_82
+
+### Pre-Requisities
+Please ensure that you change the folder path for any functions that you will use
+- ```pre_processing_from_dir``` : directory consisting your training/test images
+- ```pd.read_csv``` : csv file containing your ground truth
+- ```pre_processing_from_test``` : folder under processed_data consisting of pre-processed equation images
+- ```filtered_data.to_csv``` : change accordingly how you would like your file name to be named
+
+### How to train the CNN model
+
+1. Run all the cells under the subheading "Global Variable", you need to edit these changes before running as they may override previous trained model.
+2. Run all the cells under the subheading "Running model on Training Data (Digits & Symbols Images only (17 classes))".
+
+### How to run the CNN model with equation images
+
+1. Make sure you run the model before doing this (model can take a few hours depending on your hyperparameters)
+2. images would have to be pre-processed using the ``` Draw bounding box.ipynb ```
+3. A folder would then be created and stored under processed_data folder
+5. Run all the cells under the subheading "Retrieve Ground Truth from csv".
+- <i>Note: Ground Truth has to be in .csv format</i>
+
+
